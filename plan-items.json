@@ -1,0 +1,1516 @@
+{
+	"links": {
+		"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items?include=arrangement"
+	},
+	"data": [
+		{
+			"type": "Item",
+			"id": "632522460",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 1,
+				"service_position": "during",
+				"title": "Open",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522460"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632523326",
+			"attributes": {
+				"created_at": "2020-02-08T14:44:59Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "G",
+				"length": 180,
+				"sequence": 2,
+				"service_position": "during",
+				"title": "Leaning On The Everlasting Arms",
+				"updated_at": "2020-02-08T14:44:59Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17978728"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523326/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "20538656"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "27707215"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523326"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522461",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 120,
+				"sequence": 3,
+				"service_position": "during",
+				"title": "Welcome & Announcements",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522461"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522462",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 4,
+				"service_position": "during",
+				"title": "Call to Worship",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522462"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522463",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 120,
+				"sequence": 5,
+				"service_position": "during",
+				"title": "Scripture Reading",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522463"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522989",
+			"attributes": {
+				"created_at": "2020-02-08T14:39:30Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "F#",
+				"length": 270,
+				"sequence": 6,
+				"service_position": "during",
+				"title": "Famous One",
+				"updated_at": "2020-02-08T14:39:30Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17755535"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522989/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "20276594"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "29067307"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522989"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522464",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 7,
+				"service_position": "during",
+				"title": "Repentance & Lament",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522464"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522465",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 120,
+				"sequence": 8,
+				"service_position": "during",
+				"title": "Prayer of Repentance",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522465"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632523238",
+			"attributes": {
+				"created_at": "2020-02-08T14:43:00Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "F#",
+				"length": 270,
+				"sequence": 9,
+				"service_position": "during",
+				"title": "Shine Into Our Night",
+				"updated_at": "2020-02-08T20:29:58Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17719644"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523238/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "20234318"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "28374912"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523238"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522466",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 10,
+				"service_position": "during",
+				"title": "Assurance of Pardon",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522466"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522467",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 60,
+				"sequence": 11,
+				"service_position": "during",
+				"title": "Scripture Reading",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522467"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632526444",
+			"attributes": {
+				"created_at": "2020-02-08T15:17:49Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "C",
+				"length": 270,
+				"sequence": 12,
+				"service_position": "during",
+				"title": "Great Is Thy Faithfulness",
+				"updated_at": "2020-02-08T15:28:57Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "18757124"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632526444/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "21464745"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "29331786"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632526444"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522468",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 13,
+				"service_position": "during",
+				"title": "Proclamation of God's Word",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522468"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522470",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 2400,
+				"sequence": 14,
+				"service_position": "during",
+				"title": "Message",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522470"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522471",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "header",
+				"key_name": null,
+				"length": 0,
+				"sequence": 15,
+				"service_position": "during",
+				"title": "Response & Commission",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522471"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632522472",
+			"attributes": {
+				"created_at": "2020-02-08T14:34:10Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "item",
+				"key_name": null,
+				"length": 60,
+				"sequence": 16,
+				"service_position": "during",
+				"title": "Benediction",
+				"updated_at": "2020-02-08T14:34:10Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": null
+				},
+				"arrangement": {
+					"data": null
+				},
+				"key": {
+					"data": null
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522472"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632529419",
+			"attributes": {
+				"created_at": "2020-02-08T15:47:23Z",
+				"custom_arrangement_sequence": [
+					"Intro",
+					"Chorus",
+					"Chorus",
+					"Tag"
+				],
+				"custom_arrangement_sequence_full": [
+					{
+						"label": "Intro",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Tag",
+						"number": "1"
+					}
+				],
+				"custom_arrangement_sequence_short": [
+					"Intro",
+					"C×2",
+					"Tag"
+				],
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "C",
+				"length": 270,
+				"sequence": 17,
+				"service_position": "during",
+				"title": "Great Is Thy Faithfulness",
+				"updated_at": "2020-02-08T15:47:23Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "18757124"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632529419/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "21464745"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "29331786"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632529419"
+			}
+		},
+		{
+			"type": "Item",
+			"id": "632529336",
+			"attributes": {
+				"created_at": "2020-02-08T15:46:29Z",
+				"custom_arrangement_sequence": null,
+				"custom_arrangement_sequence_full": null,
+				"custom_arrangement_sequence_short": null,
+				"description": null,
+				"html_details": null,
+				"item_type": "song",
+				"key_name": "G",
+				"length": 300,
+				"sequence": 18,
+				"service_position": "during",
+				"title": "O Come To The Altar",
+				"updated_at": "2020-02-08T15:46:29Z"
+			},
+			"relationships": {
+				"plan": {
+					"data": {
+						"type": "Plan",
+						"id": "46860905"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "18193307"
+					}
+				},
+				"arrangement": {
+					"links": {
+						"related": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632529336/arrangement"
+					},
+					"data": {
+						"type": "Arrangement",
+						"id": "20790951"
+					}
+				},
+				"key": {
+					"data": {
+						"type": "Key",
+						"id": "29332005"
+					}
+				},
+				"selected_layout": {
+					"data": null
+				},
+				"selected_background": {
+					"data": null
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632529336"
+			}
+		}
+	],
+	"included": [
+		{
+			"type": "Arrangement",
+			"id": "20538656",
+			"attributes": {
+				"archived_at": null,
+				"bpm": 108,
+				"chord_chart": "VERSE 1\r\n[G]What a fellowship, [C]what a joy divine\r\n[G]Leaning on the everlasting [D]arms\r\n[G]What a blessedness, [C]what a peace is mine\r\n[G/D]Leaning on the everlast - [D7]ing    [G]arms\r\n\r\n\r\nCHORUS\r\n[G]Leaning,           [C]leaning\r\n[G]Safe and secure [D]from [G]all a - [D]larms\r\n[G]Leaning,           [C]leaning\r\n[G/D]Leaning on the everlast - [D7]ing    [G]arms\r\n\r\n\r\nVERSE 2\r\n[G]O how sweet to walk [C]in this pilgrim way\r\n[G]Leaning on the everlasting [D]arms\r\n[G]O how bright the path [C]grows from day to day\r\n[G/D]Leaning on the everlast - [D7]ing    [G]arms\r\n\r\n\r\nVERSE 3\r\n[G]What have I to dread? [C]What have I to fear?\r\n[G]Leaning on the everlasting [D]arms\r\n[G]I have blessed peace [C]with my Lord so near\r\n[G/D]Leaning on the everlast - [D7]ing    [G]arms\r\n",
+				"chord_chart_chord_color": 0,
+				"chord_chart_columns": 1,
+				"chord_chart_font": "Courier",
+				"chord_chart_font_size": 12,
+				"chord_chart_key": "G",
+				"created_at": "2019-09-15T21:30:15Z",
+				"has_chord_chart": true,
+				"has_chords": true,
+				"isrc": null,
+				"length": 180,
+				"lyrics": "VERSE 1\nWhat a fellowship, what a joy divine\nLeaning on the everlasting arms\nWhat a blessedness, what a peace is mine\nLeaning on the everlast - ing arms\n\nCHORUS\nLeaning, leaning\nSafe and secure from all a - larms\nLeaning, leaning\nLeaning on the everlast - ing arms\n\nVERSE 2\nO how sweet to walk in this pilgrim way\nLeaning on the everlasting arms\nO how bright the path grows from day to day\nLeaning on the everlast - ing arms\n\nVERSE 3\nWhat have I to dread? What have I to fear?\nLeaning on the everlasting arms\nI have blessed peace with my Lord so near\nLeaning on the everlast - ing arms",
+				"lyrics_enabled": true,
+				"meter": "4/4",
+				"name": "Default Arrangement",
+				"notes": null,
+				"number_chart_enabled": false,
+				"numeral_chart_enabled": false,
+				"print_margin": "0.5in",
+				"print_orientation": "Portrait",
+				"print_page_size": "Letter",
+				"rehearsal_mix_id": null,
+				"sequence": [
+					"Verse 1",
+					"Chorus",
+					"Verse 2",
+					"Chorus",
+					"Verse 3",
+					"Chorus",
+					"Chorus",
+					"Tag"
+				],
+				"sequence_full": [
+					{
+						"label": "Verse",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "2"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "3"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Tag",
+						"number": "1"
+					}
+				],
+				"sequence_short": [
+					"V1",
+					"C",
+					"V2",
+					"C",
+					"V3",
+					"C×2",
+					"Tag"
+				],
+				"updated_at": "2020-02-08T14:44:59Z"
+			},
+			"relationships": {
+				"updated_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"created_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17978728"
+					}
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523326/arrangement"
+			}
+		},
+		{
+			"type": "Arrangement",
+			"id": "20276594",
+			"attributes": {
+				"archived_at": null,
+				"bpm": 178,
+				"chord_chart": "CHORUS\r\n[E]You      are the [E/G#]Lord        the [A2]famous One    famous One\r\n[C#m7]Great      is Your [B]name in all      [A]  the earth\r\nThe [E]heavens    de - [E/G#]clare       You’re [A2]glorious    glorious\r\n[C#m7]Great      is Your [B]fame beyond    [E]  the earth\r\n\r\n\r\nINTSTRUMENTAL\r\n[|] [E]  (the earth)  [|]           [|] [E/G#]     [|]           [|] [D2]      [|]           [|] [A2]      [|]           [|] \r\n\r\n\r\n\r\nVERSE 1\r\nAnd for [F#m7]all      You’ve done        and [E/G#]yet to do\r\nWith [A]ev’ry      breath        I’m    [E]  praising You\r\nDe - [F#m7]sire      of nations and  [E/G#]  ev’ry heart\r\nYou a  [A]-  lone are God            You a - [Bsus]lone are God\r\n\r\n\r\n\r\nVERSE 2\r\nThe [F#m7]Morning      Star        is [E/G#]shining through\r\nAnd [A]ev’ry      eye        is    [E]  watching You\r\nRe - [F#m7]vealed      by nature and  [E/G#]  miracles\r\nYou are  [A]  beautiful            You are [Bsus]beautiful\r\n",
+				"chord_chart_chord_color": 0,
+				"chord_chart_columns": 1,
+				"chord_chart_font": "Courier",
+				"chord_chart_font_size": 12,
+				"chord_chart_key": "E",
+				"created_at": "2019-07-31T16:19:39Z",
+				"has_chord_chart": true,
+				"has_chords": true,
+				"isrc": null,
+				"length": 270,
+				"lyrics": "CHORUS\nYou are the Lord the famous One famous One\nGreat is Your name in all the earth\nThe heavens de - clare You’re glorious glorious\nGreat is Your fame beyond the earth\n\nINTSTRUMENTAL\n(the earth)\n\nVERSE 1\nAnd for all You’ve done and yet to do\nWith ev’ry breath I’m praising You\nDe - sire of nations and ev’ry heart\nYou a - lone are God You a - lone are God\n\nVERSE 2\nThe Morning Star is shining through\nAnd ev’ry eye is watching You\nRe - vealed by nature and miracles\nYou are beautiful You are beautiful",
+				"lyrics_enabled": true,
+				"meter": "6/8",
+				"name": "Default Arrangement",
+				"notes": null,
+				"number_chart_enabled": false,
+				"numeral_chart_enabled": false,
+				"print_margin": "0.5in",
+				"print_orientation": "Portrait",
+				"print_page_size": "Letter",
+				"rehearsal_mix_id": null,
+				"sequence": [
+					"Chorus",
+					"Chorus",
+					"Instrumental",
+					"Verse 1",
+					"Chorus",
+					"Instrumental",
+					"Verse 2",
+					"Chorus",
+					"Chorus",
+					"Tag"
+				],
+				"sequence_full": [
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Instrumental",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Instrumental",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "2"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Tag",
+						"number": "1"
+					}
+				],
+				"sequence_short": [
+					"C×2",
+					"Inst",
+					"V1",
+					"C",
+					"Inst",
+					"V2",
+					"C×2",
+					"Tag"
+				],
+				"updated_at": "2020-02-08T14:39:30Z"
+			},
+			"relationships": {
+				"updated_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"created_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17755535"
+					}
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632522989/arrangement"
+			}
+		},
+		{
+			"type": "Arrangement",
+			"id": "20234318",
+			"attributes": {
+				"archived_at": null,
+				"bpm": 93,
+				"chord_chart": "VERSE 1\r\n[E]We are not what we should be\r\nWe [F#m7]haven't sought what we should seek\r\nWe've [A]seen Your glory [F#m]Lord but looked away  [E] \r\nOur [E]hearts are bent our eyes are dim\r\nOur [F#m7]finest works are stained with sin\r\nAnd [A]emptiness has [F#m]shadowed all our [E]ways\r\n\r\n\r\n\r\nCHORUS\r\n[A]Jesus [E]Christ shine in[C#m]to our [A]night\r\nDrive our [E]dark away    [F#m7]    till Your [C#m]glory fills our [A]eyes\r\n[A]Jesus [E]Christ shine in[C#m]to our [A]night\r\nBind us [E]to Your cross    [F#m7]    where we find [E]life\r\n\r\n\r\n\r\nTURNAROUND\r\n[|] [E]           [|]               [|] [F#m]       [|]               [|] [(E)]\r\n\r\n\r\n\r\nVERSE 2\r\n[E]Still we often go astray\r\nWe [F#m7]chase the world forget Your grace\r\nBut [A]You have never [F#m]failed to bring us b[E]ack  \r\nRe[E]veal the depths of what You've done\r\nThe [F#m7]death You died the victory won\r\nYou [A]made a way for [F#m]us to know Your [E]love",
+				"chord_chart_chord_color": 0,
+				"chord_chart_columns": 1,
+				"chord_chart_font": "Courier",
+				"chord_chart_font_size": 12,
+				"chord_chart_key": "E",
+				"created_at": "2019-07-23T20:27:25Z",
+				"has_chord_chart": true,
+				"has_chords": true,
+				"isrc": null,
+				"length": 270,
+				"lyrics": "VERSE 1\nWe are not what we should be\nWe haven't sought what we should seek\nWe've seen Your glory Lord but looked away\nOur hearts are bent our eyes are dim\nOur finest works are stained with sin\nAnd emptiness has shadowed all our ways\n\nCHORUS\nJesus Christ shine into our night\nDrive our dark away till Your glory fills our eyes\nJesus Christ shine into our night\nBind us to Your cross where we find life\n\nTURNAROUND\n\nVERSE 2\nStill we often go astray\nWe chase the world forget Your grace\nBut You have never failed to bring us back\nReveal the depths of what You've done\nThe death You died the victory won\nYou made a way for us to know Your love",
+				"lyrics_enabled": true,
+				"meter": "4/4",
+				"name": "Default Arrangement",
+				"notes": null,
+				"number_chart_enabled": false,
+				"numeral_chart_enabled": false,
+				"print_margin": "0.5in",
+				"print_orientation": "Portrait",
+				"print_page_size": "Letter",
+				"rehearsal_mix_id": null,
+				"sequence": [
+					"Intro",
+					"Verse 1",
+					"Chorus",
+					"Verse 2",
+					"Chorus",
+					"Chorus",
+					"Interlude",
+					"Chorus"
+				],
+				"sequence_full": [
+					{
+						"label": "Intro",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "2"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Interlude",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					}
+				],
+				"sequence_short": [
+					"Intro",
+					"V1",
+					"C",
+					"V2",
+					"C×2",
+					"Inter",
+					"C"
+				],
+				"updated_at": "2020-02-08T20:29:58Z"
+			},
+			"relationships": {
+				"updated_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"created_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "17719644"
+					}
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632523238/arrangement"
+			}
+		},
+		{
+			"type": "Arrangement",
+			"id": "21464745",
+			"attributes": {
+				"archived_at": null,
+				"bpm": 74,
+				"chord_chart": "INTRO\r\n[C]  [C/E] [|][F]     [|][Am]    [|][F]\r\n\r\nVERSE 1\r\n[C]Great is [C/E]Thy [F]faithfulness, [G]Oh God my [C]Father\r\n[Am]There is no [C/E]shadow of [D]turning with [Gsus]Thee\r\n[G7]Thou changest [C]not, Thy com - [C/E]passions they [F]fail not\r\n[Dm7]As Thou hast [C/G]been, Thou for - [G]ever will [C]be[Csus]\r\n\r\n\r\nCHORUS\r\n[G]Great is Thy [C]faithfulness, [Am7]great is Thy [Dm]faithfulness\r\n[G]Morning by [C]morning new [D]mercies I [Gsus]see\r\n[G]All I have [C]needed Thy [C/E]hand hath pro - [F]vided {<em>(» last time to tag)</em>}\r\n[Dm7]Great is Thy [C]faithfulness, [G]Lord unto [(C)]me\r\n\r\n\r\nVERSE 2\r\n[C]I have [C/E]no [F]merit to [G]woo or de - [C]light Thee\r\n[Am]I have no [C/E]wisdom or [D]pow’rs to em - [Gsus]ploy\r\n[G7]Yet in Thy [C]mercy how [C/E]pleasing Thou [F]findst me\r\n[Dm7]This is Thy [C/G]pleasure that [G]Thou art my [C]joy[Csus]\r\n\r\nVERSE 3\r\n[C]Pardon [C/E]for [F]sin and a [G]peace that en - [C]dureth\r\n[Am7]Thine own dear [C/E]presence to [D]cheer and to [G7sus]guide\r\n[G7]Strength for to - [C]day and bright [C/E]hope for to - [F]morrow\r\n[Dm7]Blessings all [C/G]mine with ten [G]thousand be - [C]side[Csus]\r\n\r\nTAG\r\n[Dm7]Great is Thy [C]faithfulness, [F]great is Thy [C/E]faithfulness\r\n[F]Great is Thy [C/E]faithfulness, [G]Lord unto [C]me",
+				"chord_chart_chord_color": 0,
+				"chord_chart_columns": 1,
+				"chord_chart_font": "Courier",
+				"chord_chart_font_size": 12,
+				"chord_chart_key": "C",
+				"created_at": "2020-02-08T15:07:34Z",
+				"has_chord_chart": true,
+				"has_chords": true,
+				"isrc": null,
+				"length": 270,
+				"lyrics": "INTRO\n\nVERSE 1\nGreat is Thy faithfulness, Oh God my Father\nThere is no shadow of turning with Thee\nThou changest not, Thy com - passions they fail not\nAs Thou hast been, Thou for - ever will be\n\nCHORUS\nGreat is Thy faithfulness, great is Thy faithfulness\nMorning by morning new mercies I see\nAll I have needed Thy hand hath pro - vided <em>(» last time to tag)</em>\nGreat is Thy faithfulness, Lord unto me\n\nVERSE 2\nI have no merit to woo or de - light Thee\nI have no wisdom or pow’rs to em - ploy\nYet in Thy mercy how pleasing Thou findst me\nThis is Thy pleasure that Thou art my joy\n\nVERSE 3\nPardon for sin and a peace that en - dureth\nThine own dear presence to cheer and to guide\nStrength for to - day and bright hope for to - morrow\nBlessings all mine with ten thousand be - side\n\nTAG\nGreat is Thy faithfulness, great is Thy faithfulness\nGreat is Thy faithfulness, Lord unto me",
+				"lyrics_enabled": true,
+				"meter": "3/4",
+				"name": "Austin Stone Worship",
+				"notes": null,
+				"number_chart_enabled": false,
+				"numeral_chart_enabled": false,
+				"print_margin": "0.5in",
+				"print_orientation": "Portrait",
+				"print_page_size": "Letter",
+				"rehearsal_mix_id": "10616",
+				"sequence": [
+					"Intro",
+					"Verse 1",
+					"Chorus",
+					"Verse 2",
+					"Chorus",
+					"Verse 3",
+					"Chorus",
+					"Verse 4",
+					"Chorus",
+					"Tag"
+				],
+				"sequence_full": [
+					{
+						"label": "Intro",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "2"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "3"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "4"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Tag",
+						"number": "1"
+					}
+				],
+				"sequence_short": [
+					"Intro",
+					"V1",
+					"C",
+					"V2",
+					"C",
+					"V3",
+					"C",
+					"V4",
+					"C",
+					"Tag"
+				],
+				"updated_at": "2020-02-08T15:47:23Z"
+			},
+			"relationships": {
+				"updated_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"created_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "18757124"
+					}
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632526444/arrangement"
+			}
+		},
+		{
+			"type": "Arrangement",
+			"id": "20790951",
+			"attributes": {
+				"archived_at": null,
+				"bpm": 135,
+				"chord_chart": "INTRO\r\n[|] [E]         [|] [A]         [|] [E]         [|] [A]         [|] \r\n\r\nVERSE 1\r\n[E]  Are you [A]hurting and broken with - [E]in \r\nOver - [A]whelmed by the weight of your [C#m]sin? Jesus is [A]calling \r\n[E]  Have you [A]come to the end of your - [E]self \r\nDo you [A]thirst for a drink from the [C#m]well? Jesus is [A]calling \r\n\r\nCHORUS\r\n[E]     O come to  [F#m]  the altar \r\n[C#m] The Father's arms are [A]open wide \r\n[E]     Forgiveness  [F#m]  was bought with \r\n[C#m] The precious blood of [A]Jesus [E]Christ \r\n\r\nINTSRUMENTAL 1\r\n[|] [E]         [|] [A]         [|] [E]         [|] [A]         [|] \r\n\r\nVERSE 2\r\n[E]  Leave be - [A]hind your regrets and mis - [E]takes \r\nCome to - [A]day there's no reason to [C#m]wait, Jesus is [A]calling \r\n[E]  Bring your [A]sorrows and trade them for [E]joy \r\nFrom the [A]ashes a new life is [C#m]born, Jesus is [A]calling \r\n\r\nINTSRUMENTAL 2\r\n[|] [E]         [|] [E]         [|] [C#m]       [|] [C#m]       [|] [A]         [|] [A]         [|] \r\n\r\nBRIDGE\r\nOh what a [E]Savior, isn't He [C#m]wonderful \r\nSing alle - [A]luia, Christ is risen [E]\r\nBow down be - [E]fore Him, for He is [C#m]Lord of all \r\nSing alle - [A]luia, Christ is risen [E]\r\n\r\nINTSRUMENTAL 3\r\n[||:] [E]         [|] [F#m]     [|] [C#m]     [|] [A]         [:||]\r\n[|] [E]         [|] [E]         [|] [E]         [|] [E]         [|] \r\n\r\nVERSE 3\r\n[E]  Bear your [A]cross as you wait for the [E]crown \r\nTell the [D]world of the [A/C#]treasure you've [E]found \r\n\r\nENDING\r\n[|] [E]         [|] [A]         [|] [E]         [|] [A]         [|] [E]         [|] ",
+				"chord_chart_chord_color": 0,
+				"chord_chart_columns": 1,
+				"chord_chart_font": "Courier",
+				"chord_chart_font_size": 12,
+				"chord_chart_key": "E",
+				"created_at": "2019-10-28T15:37:48Z",
+				"has_chord_chart": true,
+				"has_chords": true,
+				"isrc": null,
+				"length": 300,
+				"lyrics": "INTRO\n\nVERSE 1\nAre you hurting and broken with - in\nOver - whelmed by the weight of your sin? Jesus is calling\nHave you come to the end of your - self\nDo you thirst for a drink from the well? Jesus is calling\n\nCHORUS\nO come to the altar\nThe Father's arms are open wide\nForgiveness was bought with\nThe precious blood of Jesus Christ\n\nINTSRUMENTAL 1\n\nVERSE 2\nLeave be - hind your regrets and mis - takes\nCome to - day there's no reason to wait, Jesus is calling\nBring your sorrows and trade them for joy\nFrom the ashes a new life is born, Jesus is calling\n\nINTSRUMENTAL 2\n\nBRIDGE\nOh what a Savior, isn't He wonderful\nSing alle - luia, Christ is risen\nBow down be - fore Him, for He is Lord of all\nSing alle - luia, Christ is risen\n\nINTSRUMENTAL 3\n\nVERSE 3\nBear your cross as you wait for the crown\nTell the world of the treasure you've found\n\nENDING\n",
+				"lyrics_enabled": true,
+				"meter": "6/8",
+				"name": "Default Arrangement",
+				"notes": null,
+				"number_chart_enabled": true,
+				"numeral_chart_enabled": false,
+				"print_margin": "0.5in",
+				"print_orientation": "Portrait",
+				"print_page_size": "Letter",
+				"rehearsal_mix_id": null,
+				"sequence": [
+					"Verse 1",
+					"Chorus",
+					"Instrumental 1",
+					"Verse 2",
+					"Chorus",
+					"Chorus",
+					"Instrumental 2",
+					"Bridge",
+					"Bridge",
+					"Chorus",
+					"Instrumental 3",
+					"Verse 3"
+				],
+				"sequence_full": [
+					{
+						"label": "Verse",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Instrumental",
+						"number": "1"
+					},
+					{
+						"label": "Verse",
+						"number": "2"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Instrumental",
+						"number": "2"
+					},
+					{
+						"label": "Bridge",
+						"number": "1"
+					},
+					{
+						"label": "Bridge",
+						"number": "1"
+					},
+					{
+						"label": "Chorus",
+						"number": "1"
+					},
+					{
+						"label": "Instrumental",
+						"number": "3"
+					},
+					{
+						"label": "Verse",
+						"number": "3"
+					}
+				],
+				"sequence_short": [
+					"V1",
+					"C",
+					"Inst1",
+					"V2",
+					"C×2",
+					"Inst2",
+					"B×2",
+					"C",
+					"Inst3",
+					"V3"
+				],
+				"updated_at": "2020-02-08T15:46:29Z"
+			},
+			"relationships": {
+				"updated_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"created_by": {
+					"data": {
+						"type": "Person",
+						"id": "42130293"
+					}
+				},
+				"song": {
+					"data": {
+						"type": "Song",
+						"id": "18193307"
+					}
+				}
+			},
+			"links": {
+				"self": "https://api.planningcenteronline.com/services/v2/service_types/852286/plans/46860905/items/632529336/arrangement"
+			}
+		}
+	],
+	"meta": {
+		"total_count": 18,
+		"count": 18,
+		"can_include": [
+			"arrangement",
+			"item_notes",
+			"item_times",
+			"key",
+			"media",
+			"selected_attachment",
+			"song"
+		],
+		"parent": {
+			"id": "46860905",
+			"type": "Plan"
+		}
+	}
+}
