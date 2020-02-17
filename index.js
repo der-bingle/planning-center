@@ -1,4 +1,4 @@
-const plan = require("./plan-items.json");
+const plan = require("./this-week.json");
 const run    = require('run-applescript')
 const lyrics = require("./lyrics");
 const presentation = require("./presentation");
