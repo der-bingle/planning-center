@@ -1,17 +1,71 @@
 const cliArgs = require('command-line-args');
+const cliUsage = require('command-line-usage');
 
 const desc = {
-  week: "The date of the service you want to create Keynote for ('2020-02-16'). Defaults to next Sunday.",
-  script: "Log the applescript to the console rather than running it. Mainly useful for debugging.",
-  save: "BOOLEAN, whether to save the Keynote file. Default false.",
-  link: "BOOLEAN, symlink Keynote file to the desktop. Default false.",
+  help: 'Display this usage guide.',
+  week: "Date of the service you want to create Keynote. {dim Default: next Sunday.}",
+  script: "Log the resulting applescript to the console rather than running it. \n{italic Mainly useful for debugging.}",
+  save: "Save the Keynote file. {dim Default: false.}",
+  link: "Symlink Keynote file to the desktop. {dim Default: false.}",
 }
 
 const optionDefinitions = [
-  { name: 'week', alias: 'w', type: String, description: desc.week },
-  { name: 'script', type: Boolean , description: desc.script},
-  { name: 'save', alias: 's', type: Boolean, defaultValue: true, description: desc.save },
-  { name: 'link', alias: 'l', type: Boolean, defaultValue: true, description: desc.link },
+  {
+    name: 'help',
+    alias: 'h',
+    type: Boolean,
+    typeLabel: '{dim false}',
+    description: 'Display this usage guide.'
+  },
+  {
+    name: 'week',
+    alias: 'w',
+    type: String,
+    typeLabel: '{dim next sunday}',
+    description: "Date of the service you want to create Keynote.",
+  },
+  {
+    name: 'save',
+    alias: 's',
+    type: Boolean,
+    defaultValue: true,
+    typeLabel: '{dim false}',
+    description: "Save the Keynote file. ",
+  },
+  {
+    name: 'link',
+    alias: 'l',
+    type: Boolean,
+    defaultValue: true,
+    typeLabel: '{dim false}',
+    description: "Symlink created Keynote file to the desktop."
+  },
+  {
+    name: 'applescript',
+    alias: 'a',
+    type: Boolean,
+    typeLabel: '{dim false}',
+    description: "Log applescript to the console. {italic Mainly useful for debugging.}"
+  }
 ]
 
-const options = commandLineArgs(optionDefinitions)
+const options = cliArgs(optionDefinitions)
+
+if (options.help) {
+  const usage = cliUsage([
+    {
+      header: 'Planning Center Service to Keynote',
+      content: 'Easily create Apple Keynote files from a plan in your PCS account.'
+    },
+    {
+      header: 'Options',
+      optionList: optionDefinitions
+    },
+    {
+      content: 'Project home: {underline https://github.com/der-bingle/planning-center}'
+    }
+  ])
+  console.log(usage)
+} else {
+  console.log(options)
+}
