@@ -8,6 +8,7 @@ module.exports = {
   tellDoc: `tell thisDocument`,
   tellCurrentSlide: `tell the current slide`,
   tellSlide: `tell newSlide`,
+  deleteFirstSlide: `delete the first slide`,
   setTitleText: (text) => `set the object text of the default title item to "${text}"`, 
   endTry: `end try`,
   onError: `on error errorMessage number errorNumber`,

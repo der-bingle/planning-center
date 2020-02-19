@@ -8,6 +8,7 @@ let create = songsScript => [
 	script.newDoc("Third Baptist"),
 	script.tellDoc,
 	songsScript,
+	script.deleteFirstSlide,
 	script.endTell,
 	script.onError,
 	script.endTry,
