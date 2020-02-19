@@ -1,47 +1,8 @@
 const R = require("ramda");
 const got = require("got");
-const set = require('date-fns/fp/set');
 const config = require("./config")
-const format = require('date-fns/fp/format');
-const addWeeks = require('date-fns/fp/addWeeks');
-const isSunday = require('date-fns/fp/isSunday');
-const startOfWeek = require('date-fns/fp/startOfWeek');
-
-let now = new Date();
-let dateToString = format("R-MM-dd'T'H:mm:ss'Z'")
-
-const serviceTime = (date) => {
-  let time = config.get("serviceTime").split(":")
-  let hours = parseInt(time[0]);
-  let minutes = parseInt(time[1]);
-  return set({
-    hours,
-    minutes,
-    seconds: 00
-  }, date)
-};
-
-let getThisSunday = R.pipe(
-  startOfWeek,
-  serviceTime,
-  dateToString
-);
-
-let getNextSunday = R.pipe(
-  addWeeks(1),
-  startOfWeek,
-  serviceTime,
-  dateToString
-);
-
-let getNextServiceDate = () => {
-  if (isSunday(now)) {
-    return getThisSunday(now);
-  } else {
-    return getNextSunday(now)
-  }
-}
-let nextServiceDate = getNextServiceDate();
+const utils = require("./utils")
+;
 
 let gotOpts = {
   // hostname: "api.planningcenteronline.com",
@@ -50,7 +11,6 @@ let gotOpts = {
   responseType: "json",
   resolveBodyOnly: true
 }
-
 
 let getIdByDate = (date, plans) => {
 
@@ -96,7 +56,7 @@ let getPlanByDate = async (date) => {
   return getPlanItems(planID);
 }
 
-const getNextPlan = () => getPlanByDate(nextServiceDate)
+const getNextPlan = () => getPlanByDate(utils.nextServiceDate)
 
 exports.byDate = getPlanByDate;
 exports.next = getNextPlan;
