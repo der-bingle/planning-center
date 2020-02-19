@@ -21,6 +21,12 @@ const serviceTime = (date) => {
   }, date)
 };
 
+let getThisSunday = R.pipe(
+  startOfWeek,
+  serviceTime,
+  dateToString
+);
+
 let getNextSunday = R.pipe(
   addWeeks(1),
   startOfWeek,
@@ -30,7 +36,7 @@ let getNextSunday = R.pipe(
 
 let getNextServiceDate = () => {
   if (isSunday(now)) {
-    return isoFormat(now);
+    return getThisSunday(now);
   } else {
     return getNextSunday(now)
   }
@@ -45,46 +51,52 @@ let gotOpts = {
   resolveBodyOnly: true
 }
 
-let isNextService = R.pipe(
-  R.prop("attributes"),
-  R.propEq("sort_date", nextServiceDate)
-);
 
-let getPlanId = R.pipe(
-  R.prop("data"),
-  R.find(isNextService),
-  R.prop("id"),
-  // R.prop("links"),
-  // R.prop("self"),
-);
+let getIdByDate = (date, plans) => {
+
+  let dateMatches = date => R.pipe(
+    R.prop("attributes"),
+    R.propEq("sort_date", date)
+  );
+
+  let getPlanId = R.pipe(
+    R.prop("data"),
+    R.find(dateMatches),
+    R.prop("id"),
+  );
+
+  return getPlanId(plans)
+}
 
 let serviceTypeID = config.get("serviceTypeID")
 
-let getNextPlanID = async () => {
+let getPlanID = async (date) => {
   gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${serviceTypeID}/plans`
-  gotOpts.searchParams = {filter: "future"}
-  let planList = await got(gotOpts);
-  // console.log(got)
-  return getPlanId(planList);
+  gotOpts.searchParams = { filter: "future" }
+  let plans = await got(gotOpts);
+  return getIdByDate(date, plans);
 }
 
-let getNextPlan = async (planID) => {
+let getPlanItems = async (planID) => {
   gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${serviceTypeID}/plans/${planID}/items`
-  gotOpts.searchParams = {include: "arrangement"}
+  gotOpts.searchParams = { include: "arrangement" }
   let plan = await got(gotOpts);
   return plan.included.map(mapSongs);
 }
 
 let mapSongs = song => ({
-  order: song.attributes.sequence,
+  sequence: song.attributes.sequence,
   rawLyrics: song.attributes.lyrics
 })
 
-let main = async () => {
-  let planID = await getNextPlanID();
-  // console.log(planID)
-  let plan = await getNextPlan(planID);
-  console.log(JSON.stringify(plan, null, 2))
+let getPlanByDate = async (date) => {
+  // ↓ Find plan where date === attributes.sort_date
+  let planID = await getPlanID(date);
+  // ↓ Get plan items w/ arrangements included
+  return getPlanItems(planID);
 }
 
-main().catch(error => console.log(error))
+const getNextPlan = () => getPlanByDate(nextServiceDate)
+
+exports.byDate = getPlanByDate;
+exports.next = getNextPlan;

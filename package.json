@@ -12,5 +12,8 @@
     "js-yaml": "^3.13.1",
     "ramda": "^0.27.0",
     "run-applescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "clipboardy": "^2.2.0"
   }
 }

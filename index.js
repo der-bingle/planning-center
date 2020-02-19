@@ -3,6 +3,7 @@ const run    = require('run-applescript')
 const lyrics = require("./lyrics");
 const presentation = require("./presentation");
 const songs = require("./songs");
+const config = require("./config")
 let songList = plan.included;
 
 

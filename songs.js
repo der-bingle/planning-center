@@ -1,19 +1,32 @@
-const plan = require("./plan-items.json");
-const makeSlide = require("./slides");
-const lyrics = require("./lyrics");
+const R = require("ramda")
+const script = require('./script');
+const makeSlides = require("./slides");
+const getLyrics = require("./lyrics");
+const getSequence = require("./sequence");
+
+let newLineJoin = R.join("\n\n");
+
+let addBlank = R.append(script.newSlide("Blank"))
 
 let makeOneSong = (song) => {
-  let lyric = lyrics.get(song)
-  let order = lyrics.order(song)
+  let lyrics = getLyrics(song)
+  let sequence = getSequence(song)
 
-  let script = order.map(part => {
-    let lines = lyric.get(part)
-    return makeSlide.lyrics(lines)
-  });
-  
-  return script.join("\n")
+  let addSection = (script, section) => {
+    let sectionSlides = lyrics.get(section)
+    let newScript = sectionSlides.map(slide => makeSlides.lyrics(slide))
+    return R.concat(script, newScript)
+  };
+
+  let make = R.pipe(
+    R.reduce(addSection, []),
+    addBlank,
+    newLineJoin
+  );
+  return make(sequence)
 }
 
-let makeSongs = list => list.map(song => makeOneSong(song)).join("\n");
+let makeSongs = list => newLineJoin(list.map(song => makeOneSong(song)));
 
 module.exports.make = makeSongs
+module.exports.makeOne = makeOneSong
