@@ -10,6 +10,7 @@ module.exports = {
   tellSlide: `tell newSlide`,
   deleteFirstSlide: `delete the first slide`,
   setTitleText: (text) => `set the object text of the default title item to "${text}"`, 
+  saveDoc: (filePath) => `set filePath to POSIX file "${filePath}" as string\nclose document 1 saving in file filePath`,
   endTry: `end try`,
   onError: `on error errorMessage number errorNumber`,
   endTell: `end tell`,

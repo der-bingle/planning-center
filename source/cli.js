@@ -1,13 +1,12 @@
 const cliArgs = require('command-line-args');
 const cliUsage = require('command-line-usage');
+const utils = require('./utils');
+const getPlan = require("./get-plan")
+const songs = require("./songs");
+const presentation = require("./presentation");
+const run = require('run-applescript')
 
-const desc = {
-  help: 'Display this usage guide.',
-  week: "Date of the service you want to create Keynote. {dim Default: next Sunday.}",
-  script: "Log the resulting applescript to the console rather than running it. \n{italic Mainly useful for debugging.}",
-  save: "Save the Keynote file. {dim Default: false.}",
-  link: "Symlink Keynote file to the desktop. {dim Default: false.}",
-}
+const getServiceWeek = date => utils.closestServiceDate(date)
 
 const optionDefinitions = [
   {
@@ -20,7 +19,8 @@ const optionDefinitions = [
   {
     name: 'week',
     alias: 'w',
-    type: String,
+    type: date => getServiceWeek(date),
+    defaultValue: utils.nextServiceDate(),
     typeLabel: '{dim next sunday}',
     description: "Date of the service you want to create Keynote.",
   },
@@ -36,22 +36,41 @@ const optionDefinitions = [
     name: 'link',
     alias: 'l',
     type: Boolean,
-    defaultValue: true,
+    defaultValue: false,
     typeLabel: '{dim false}',
-    description: "Symlink created Keynote file to the desktop."
+    description: "Symlink Keynote file to the desktop."
   },
   {
-    name: 'applescript',
-    alias: 'a',
+    name: 'debug',
+    alias: 'd',
     type: Boolean,
     typeLabel: '{dim false}',
-    description: "Log applescript to the console. {italic Mainly useful for debugging.}"
+    description: "Log applescript to the console and exit."
   }
 ]
 
-const options = cliArgs(optionDefinitions)
+const input = cliArgs(optionDefinitions)
 
-if (options.help) {
+let handleInput = async (input) => {
+  let filepath = utils.getFilePath(input.week)
+  let plan = await getPlan.byDate(input.week);
+  let slides = songs.make(plan);
+  let script = null;
+
+  if (input.save) {
+    script = presentation.create(slides, filepath)
+  } else {
+    script = presentation.create(slides)
+  }
+
+  if (input.applescript) {
+    console.log(script)
+  } else {
+    await run(script)
+  }
+}
+
+if (input.help) {
   const usage = cliUsage([
     {
       header: 'Planning Center Service to Keynote',
@@ -67,5 +86,5 @@ if (options.help) {
   ])
   console.log(usage)
 } else {
-  console.log(options)
+  handleInput(input)
 }

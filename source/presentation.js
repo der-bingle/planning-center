@@ -1,7 +1,10 @@
-const run    = require('run-applescript')
+const R = require("ramda");
 const script = require('./script');
 
-let create = songsScript => [
+let newLineJoin = R.join("\n\n");
+
+let create = (songsScript, filepath) => {
+	let base = [
 	script.tellKeynote,
 	script.activate,
 	script.try,
@@ -13,6 +16,14 @@ let create = songsScript => [
 	script.onError,
 	script.endTry,
 	script.endTell
-].join("\n");
+];
+
+if (filepath) {
+	return newLineJoin(R.insert(10, script.saveDoc(filepath), base))
+} else {
+	return newLineJoin(base)
+}
+
+};
 
 module.exports.create = create;
