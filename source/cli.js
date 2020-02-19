@@ -1,10 +1,13 @@
+const c = require('ansi-colors');
+const run = require('run-applescript')
 const cliArgs = require('command-line-args');
 const cliUsage = require('command-line-usage');
+
+const link = require("./link")
+const getPlan = require("./plan")
 const utils = require('./utils');
-const getPlan = require("./get-plan")
 const songs = require("./songs");
 const presentation = require("./presentation");
-const run = require('run-applescript')
 
 const getServiceWeek = date => utils.closestServiceDate(date)
 
@@ -53,6 +56,7 @@ const input = cliArgs(optionDefinitions)
 
 let handleInput = async (input) => {
   let filepath = utils.getFilePath(input.week)
+  let humanDate = utils.toHumanDate(input.week);
   let plan = await getPlan.byDate(input.week);
   let slides = songs.make(plan);
   let script = null;
@@ -63,12 +67,19 @@ let handleInput = async (input) => {
     script = presentation.create(slides)
   }
 
-  if (input.applescript) {
+  if (input.debug) {
     console.log(script)
   } else {
     await run(script)
-  }
-}
+
+    if (input.link) {
+      link(filepath);
+      console.log(c.bold(`The keynote for ${humanDate} was created at ${c.underline(filepath)} and symlinked to the Desktop.`));
+    } else {
+      console.log(c.bold(`The keynote for ${c.green.bold(humanDate)} was created was created at ${c.green.bold.italic(filepath)}`));
+    }
+  };
+};
 
 if (input.help) {
   const usage = cliUsage([
