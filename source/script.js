@@ -15,3 +15,7 @@ module.exports = {
   onError: `on error errorMessage number errorNumber`,
   endTell: `end tell`,
 };
+
+let replaceImage = `set thisPlaceholderImageItem to image 1
+			set file name of thisPlaceholderImageItem to ¬
+				alias "Macintosh HD:Users:sal:Pictures:Saturn.jpg"`

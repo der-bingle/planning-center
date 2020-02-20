@@ -1,5 +1,4 @@
 const R = require("ramda")
-const indent = require('indent-string');
 const script = require('./script');
 
 const makeLyricSlide = (lines) => [

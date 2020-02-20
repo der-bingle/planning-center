@@ -9,8 +9,10 @@ const isSunday    = require('date-fns/fp/isSunday');
 const startOfWeek = require('date-fns/fp/startOfWeek');
 
 let now = new Date();
-let dateToString = format("R-MM-dd'T'H:mm:ss'Z'")
+let dateToISOtz = format("R-MM-dd'T'H:mm:ss'Z'")
 let dateToFilename = date => format("R-MM-dd", parseISO(date))
+let toHumanDate = date => format("EEEE, MMMM d", parseISO(date))
+// let dateToFilename = date => format("R-MM-dd", parseISO("2020-02-23T10:40:00Z"))
 
 const serviceTime = (date) => {
   let time = config.get("serviceTime").split(":")
@@ -26,14 +28,14 @@ const serviceTime = (date) => {
 let getThisSunday = R.pipe(
   startOfWeek,
   serviceTime,
-  dateToString
+  dateToISOtz
 );
 
 let getNextSunday = R.pipe(
   addWeeks(1),
   startOfWeek,
   serviceTime,
-  dateToString
+  dateToISOtz
 );
 
 let getNextServiceDate = () => {
@@ -51,5 +53,6 @@ let getFilePath = (date) => {
 }
 
 module.exports.getFilePath = getFilePath;
+module.exports.toHumanDate = toHumanDate;
 module.exports.nextServiceDate = getNextServiceDate;
 module.exports.closestServiceDate = (date) => getThisSunday(parseISO(date));

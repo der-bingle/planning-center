@@ -28,6 +28,13 @@ const optionDefinitions = [
     description: "Date of the service you want to create Keynote.",
   },
   {
+    name: 'id',
+    alias: 'i',
+    type: String,
+    typeLabel: '{dim planID}',
+    description: "Create keynote from plan ID.",
+  },
+  {
     name: 'save',
     alias: 's',
     type: Boolean,
