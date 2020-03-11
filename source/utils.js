@@ -46,8 +46,7 @@ let getNextServiceDate = () => {
   }
 }
 
-let getFilePath = (date) => {
-  let saveDir = config.get("saveLocation")
+let getFilePath = (saveDir, date) => {
   let filename = dateToFilename(date) + ".key";
   return path.join(saveDir, filename)
 }

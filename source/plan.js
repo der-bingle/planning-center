@@ -6,8 +6,6 @@ const utils = require("./utils")
 
 let gotOpts = {
   // hostname: "api.planningcenteronline.com",
-  username: config.get("appId"),
-  password: config.get("secret"),
   responseType: "json",
   resolveBodyOnly: true
 }
@@ -28,35 +26,38 @@ let getIdByDate = (date, plans) => {
   return getPlanId(plans)
 }
 
-let serviceTypeID = config.get("serviceTypeID")
+// let serviceTypeID = config.get("serviceTypeID")
 
-let getPlanID = async (date) => {
-  gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${serviceTypeID}/plans`
-  gotOpts.searchParams = { filter: "future" }
-  let plans = await got(gotOpts);
-  return getIdByDate(date, plans);
-}
-
-let getPlanItems = async (planID) => {
-  gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${serviceTypeID}/plans/${planID}/items`
-  gotOpts.searchParams = { include: "arrangement" }
-  let plan = await got(gotOpts);
-  return plan.included.map(mapSongs);
-}
+// let getPlanID = async (date) => {
+//   gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${serviceTypeID}/plans`
+//   gotOpts.searchParams = { filter: "future" }
+//   let plans = await got(gotOpts);
+//   return getIdByDate(date, plans);
+// }
 
 let mapSongs = song => ({
   sequence: song.attributes.sequence,
   rawLyrics: song.attributes.lyrics
 })
 
-let getPlanByDate = async (date) => {
-  // ↓ Find plan where date === attributes.sort_date
-  let planID = await getPlanID(date);
-  // ↓ Get plan items w/ arrangements included
-  return getPlanItems(planID);
+let getPlanItems = async (planID, opts) => {
+  gotOpts.username = opts.appID
+  gotOpts.password = opts.secret
+  gotOpts.url = `https://api.planningcenteronline.com/services/v2/service_types/${opts.serviceType}/plans/${planID}/items`
+  gotOpts.searchParams = { include: "arrangement" }
+  let plan = await got(gotOpts);
+  return plan.included.map(mapSongs);
 }
 
-const getNextPlan = () => getPlanByDate(utils.nextServiceDate)
 
-exports.byDate = getPlanByDate;
-exports.next = getNextPlan;
+// let getPlanByDate = async (date) => {
+//   // ↓ Find plan where date === attributes.sort_date
+//   let planID = await getPlanID(date);
+//   // ↓ Get plan items w/ arrangements included
+//   return getPlanItems(planID);
+// }
+
+// const getNextPlan = () => getPlanByDate(utils.nextServiceDate)
+
+
+module.exports = getPlanItems;

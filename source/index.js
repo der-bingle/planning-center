@@ -1,19 +1,31 @@
-const plan = require("./this-week.json");
-const run    = require('run-applescript')
-const lyrics = require("./lyrics");
-const presentation = require("./presentation");
+const run = require('run-applescript')
+
+const util = require("./utils");
+const link = require("./link")
+const getPlan = require("./plan")
 const songs = require("./songs");
-const config = require("./config")
-let songList = plan.included;
+const presentation = require("./presentation");
 
+const main = async (id, opts) => {
+  try {
+    let filePath = util.getFilePath(opts.saveDir, opts.date)
+    let plan = await getPlan(id, opts);
+    let slides = songs.make(plan);
+    let script = await presentation.create(slides, filePath);
 
-let script = `
-${presentation.create}
-${songs.make(songList)}
-${presentation.end}
-`
-// console.log(script);
-let main = async () => {
-  await run(script)
+    if (opts.debug) {
+      return console.log(script)
+    } else {
+      await run(script)
+
+      if (opts.link) {
+        link(filePath);
+      }
+      return filePath
+    };
+  } catch (error) {
+    throw (error)
+  }
 }
-main()
+
+module.exports = main;

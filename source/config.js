@@ -1,5 +1,5 @@
-const Conf = require('conf');
-const yaml = require('js-yaml');
+const Conf = require("conf");
+const yaml = require("js-yaml");
 const path = require('path')
 const homedir = require('os').homedir();
 
